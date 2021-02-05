@@ -1,12 +1,15 @@
 import 'dart:async';
+import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
-import 'file:///E:/FlutterApp/flutter_rx_stream/lib/screens/authentication/login/login.dart';
+import 'package:flutter_rx_stream/screens/authentication/login/login.dart';
 import 'package:flutter_rx_stream/screens/main/main_bloc.dart';
 import 'package:flutter_rx_stream/service/network_util.dart';
 import 'package:flutter_rx_stream/utils/app_helper.dart';
 import 'package:flutter_rx_stream/utils/app_theme.dart';
+import 'package:hive/hive.dart';
+import 'package:path_provider/path_provider.dart';
 import 'dart:ui' as ui;
 import 'generated/l10n.dart';
 
@@ -16,6 +19,8 @@ void main() async {
 
 Future<void> initMyApp() async {
   WidgetsFlutterBinding.ensureInitialized();
+  Directory directory = await getApplicationDocumentsDirectory();
+  Hive.init(directory.path);
   runApp(MyApp());
 }
 

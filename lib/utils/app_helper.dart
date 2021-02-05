@@ -3,7 +3,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'file:///E:/FlutterApp/flutter_rx_stream/lib/screens/main/main_bloc.dart';
+import 'package:flutter_rx_stream/screens/main/main_bloc.dart';
 import 'package:flutter_rx_stream/widget/dialog.dart';
 import 'package:toast/toast.dart';
 import 'package:intl/intl.dart';

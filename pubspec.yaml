@@ -21,7 +21,8 @@ dependencies:
   dio: ^3.0.10 # service + api
   url_launcher: ^5.7.10 # launcher url
   image: ^2.1.19
-
+  hive: ^1.4.4+1
+  path_provider: ^1.6.24
 
 dev_dependencies:
   flutter_test:
